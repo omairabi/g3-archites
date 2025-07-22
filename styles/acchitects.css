@@ -20,12 +20,19 @@
     border: none;
 
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
 /* dark 2 */
 .text-gray{
     color: #424242;
 }
 /* dark 3 */
-.text-light gray{
+.text-light-gray{
     color: #727272;
 }
 .bg-light{
@@ -68,6 +75,24 @@
 }
 .banner-image{
     width: 100%;
+}
+/* team and feature related */
+.teams{
+    align-items: center;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    padding-left: 73px;
+}
+.feature-title{
+    font-size: 2.5em;
+}
+#quick{
+    font-weight: 600;
 }
 /* responsive media query */
  @media screen and (max-width:576px) {
