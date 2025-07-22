@@ -98,6 +98,27 @@ main > section{
 #quick{
     font-weight: 600;
 }
+/* features section related styles */
+.features{
+    gap: 100px;
+    justify-content: center;
+}
+#feature-section-title{
+    border-left: 6px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow:2px 4px 20px rgb(6, 6, 6);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 /* fact card related  */
 .facts-container{
         display: grid;
