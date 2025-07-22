@@ -98,15 +98,70 @@ main > section{
 #quick{
     font-weight: 600;
 }
+/* fact card related  */
+.facts-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+}
+    
+
+.fact-card{
+    border: 1px solid rgba(255, 144, 14, 1);
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fact-number{
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25em;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
+}
+/* sponsor related styles */
+.title-sponsor{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.sponsor-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+    filter: grayscale(100%);
+}
 /* responsive media query */
  @media screen and (max-width:576px) {
     .navbar,
      .nav-links,
-     .teams{
+     .teams,
+     .facts-container,
+     .sponsor-images{
         flex-direction: column;
     }
-    .team-images{
+    .team-images, .facts-container, .sponsor-images{
         grid-template-columns: repeat(1, 1fr);
     }
+    .facts-container{
+       justify-items: center;
+       gap: 24px;
+    }
+   .sponsor-images{
+       justify-items: center;
+       gap: 50px;
+   }
+
+    
     
  }
