@@ -103,6 +103,9 @@ main > section{
     gap: 100px;
     justify-content: center;
 }
+.featured-architect img{
+    width: 100%;
+}
 #feature-section-title{
     border-left: 6px solid rgba(255, 144, 14, 1);
     padding-left: 20px;
@@ -118,6 +121,17 @@ main > section{
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+#experience-badge{
+    padding: 30px 32px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -80px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 /* fact card related  */
 .facts-container{
@@ -167,6 +181,7 @@ main > section{
     .navbar,
      .nav-links,
      .teams,
+     .features,
      .facts-container,
      .sponsor-images{
         flex-direction: column;
@@ -181,6 +196,10 @@ main > section{
    .sponsor-images{
        justify-items: center;
        gap: 50px;
+   }
+   #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
    }
 
     
